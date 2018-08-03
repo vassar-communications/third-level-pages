@@ -1,0 +1,196 @@
+/* 400px divided by 16px */
+/* 600px divided by 16px */
+/* 800px divided by 16px */
+/* 1000px divided by 16px */
+/* 1000px divided by 16px */
+/*	Basic page styling
+	================== */
+.u-folderDepartments,
+.u-folderMajors {
+  /*	Remove richer 2nd-level header */
+  /*
+  	@media (min-width: 56.25em) {
+  		.Module--halfWidth {
+  		    float: left;
+  		    width: 49.4%;
+  		}
+  	}
+  */
+  /* Main section header */
+  /*	Page styling */ }
+  .u-folderDepartments .u-lMain,
+  .u-folderMajors .u-lMain {
+    padding: 0 2em; }
+    @media screen and (min-width: 62.5em) {
+      .u-folderDepartments .u-lMain,
+      .u-folderMajors .u-lMain {
+        padding: 0; } }
+  .u-folderDepartments .u-lMain,
+  .u-folderDepartments .u-lHeader,
+  .u-folderMajors .u-lMain,
+  .u-folderMajors .u-lHeader {
+    max-width: 50em;
+    margin: 2em auto; }
+  .u-folderDepartments .u-lHeader,
+  .u-folderMajors .u-lHeader {
+    background: none;
+    padding: 0 2.3em !important;
+    margin-top: 4em; }
+    @media screen and (min-width: 62.5em) {
+      .u-folderDepartments .u-lHeader,
+      .u-folderMajors .u-lHeader {
+        padding: 0 !important; } }
+  .u-folderDepartments .u-Masthead,
+  .u-folderMajors .u-Masthead {
+    border-bottom: 1px solid #BFB9B0;
+    padding-bottom: 1em; }
+  .u-folderDepartments .u-Masthead__subhead,
+  .u-folderMajors .u-Masthead__subhead {
+    display: none; }
+  .u-folderDepartments .u-Masthead__siteName--link a,
+  .u-folderMajors .u-Masthead__siteName--link a {
+    -webkit-transition: color ease 0.4s;
+    transition: color ease 0.4s; }
+  .u-folderDepartments .u-Masthead__siteName--link a:link, .u-folderDepartments .u-Masthead__siteName--link a:visited,
+  .u-folderMajors .u-Masthead__siteName--link a:link,
+  .u-folderMajors .u-Masthead__siteName--link a:visited {
+    color: #861f41;
+    font-weight: bold !important;
+    border: none; }
+  .u-folderDepartments .u-Masthead__siteName--link a:hover, .u-folderDepartments .u-Masthead__siteName--link a:visited:hover,
+  .u-folderMajors .u-Masthead__siteName--link a:hover,
+  .u-folderMajors .u-Masthead__siteName--link a:visited:hover {
+    color: #c1b5b0; }
+  .u-folderDepartments .u-BreadCrumbs, .u-folderDepartments .u-pageTitle,
+  .u-folderMajors .u-BreadCrumbs,
+  .u-folderMajors .u-pageTitle {
+    display: block;
+    visibility: visible; }
+  .u-folderDepartments .u-Masthead__siteName,
+  .u-folderMajors .u-Masthead__siteName {
+    text-align: left;
+    font-family: "acumin-pro", "Arial", "Helvetica";
+    font-size: 2em;
+    display: block;
+    margin: 0;
+    padding: 0 !important;
+    text-transform: none;
+    font-weight: bold !important;
+    letter-spacing: -0.03em; }
+  .u-folderDepartments .u-pageTitle,
+  .u-folderMajors .u-pageTitle {
+    font-size: 4em;
+    text-transform: uppercase;
+    line-height: 0.86;
+    margin: 0.4em 0 0.7em 0; }
+    @media screen and (min-width: 50em) {
+      .u-folderDepartments .u-pageTitle,
+      .u-folderMajors .u-pageTitle {
+        font-size: 5em; } }
+  .u-folderDepartments .modulesArea,
+  .u-folderMajors .modulesArea {
+    overflow: hidden; }
+  .u-folderDepartments .Module:not(.standardList) .Module__subList li,
+  .u-folderMajors .Module:not(.standardList) .Module__subList li {
+    list-style-type: square;
+    margin-left: 1.4em;
+    margin-bottom: 0 !important;
+    padding-bottom: 0; }
+  .u-folderDepartments .modulesArea__row:first-of-type .Module__header,
+  .u-folderMajors .modulesArea__row:first-of-type .Module__header {
+    margin-top: 0; }
+  .u-folderDepartments .Module--halfWidth,
+  .u-folderMajors .Module--halfWidth {
+    margin: 0; }
+  .u-folderDepartments .Module__listItem,
+  .u-folderMajors .Module__listItem {
+    padding-bottom: 0;
+    margin-bottom: 0.5em; }
+  .u-folderDepartments .Module__header,
+  .u-folderMajors .Module__header {
+    text-align: left;
+    font-family: "acumin-pro", "Arial", "Helvetica";
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 1.2em;
+    font-weight: bold !important;
+    margin-top: 2em;
+    margin-bottom: 1em; }
+  .u-folderDepartments h4,
+  .u-folderDepartments .Module__list > .Module__listItem > .Module__linktext,
+  .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext,
+  .u-folderMajors h4,
+  .u-folderMajors .Module__list > .Module__listItem > .Module__linktext,
+  .u-folderMajors .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext {
+    /* I realize that last one is an egregious hack - we need a class on here, but I don't know how to get that working on the link module. Also it's 4:30 on a Friday, everyone's gone, there is no power in Main, and this has to get done ASAP, so I'm resorting to desperate means here */
+    font-family: "acumin-pro", "Arial", "Helvetica";
+    text-transform: uppercase;
+    font-weight: bold !important;
+    margin: 1.4em 0 0.2em 0 !important;
+    display: block;
+    font-size: 0.9em;
+    letter-spacing: 0.04em; }
+  .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext,
+  .u-folderMajors .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext {
+    border-bottom: 1px solid #882344;
+    color: #882344;
+    display: inline-block;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s; }
+    .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:hover, .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:visited:hover,
+    .u-folderMajors .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:hover,
+    .u-folderMajors .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:visited:hover {
+      color: #c1b5b0;
+      border-color: #c1b5b0; }
+
+.intro {
+  font-size: 1.3em;
+  font-weight: 300; }
+
+.third-lev-page-mod {
+  /*	.Module__header {
+  		text-transform: uppercase;
+  		font-size: 3em;
+  		letter-spacing: .03em;
+  	} */ }
+
+@media screen and (min-width: 50em) {
+  .cols .Module__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+.cols--2 {
+  /*
+  	@include medium() {
+  		display: flex;
+  		flex-wrap: wrap;
+  
+  		.Module__listItem {
+  			width: 50%;
+  		}
+  	}
+  */ }
+  @media screen and (min-width: 50em) {
+    .cols--2 {
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2;
+      -webkit-column-gap: 1em;
+         -moz-column-gap: 1em;
+              column-gap: 1em; } }
+
+/*
+.cols--3 {
+	max-width: 60em;
+
+	@include medium() {
+		.Module__listItem {
+			width: 33.3%;
+			padding-right: 2em;
+		}
+	}
+}
+*/
