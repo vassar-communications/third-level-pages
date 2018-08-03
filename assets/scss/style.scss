@@ -161,11 +161,23 @@ $page__max-width: 50em;
 		margin-bottom: 1em;
 	}
 	h4,
-	.Module__list > .Module__listItem > .Module__linktext,
+	.Module__list > .Module__listItem > .Module__linktext {
+		font-family: $sans-serif;
+		text-transform: uppercase;
+		font-weight: bold !important;
+		margin: 1.4em 0 0.2em 0 !important;
+		display: block;
+		font-size: 0.9em;
+		letter-spacing: 0.04em;
+	}
+
+}
+
+/* I realize this is an egregious hack - we need a class on here, but I don't know how to get that working on the link module. Also it's 4:30 on a Friday, everyone's gone, there is no power in Main, and this has to get done ASAP, so I'm resorting to desperate means here */
+		
+
+.u-folderDepartments {
 	.Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext {
-		
-		/* I realize that last one is an egregious hack - we need a class on here, but I don't know how to get that working on the link module. Also it's 4:30 on a Friday, everyone's gone, there is no power in Main, and this has to get done ASAP, so I'm resorting to desperate means here */
-		
 		font-family: $sans-serif;
 		text-transform: uppercase;
 		font-weight: bold !important;
@@ -189,8 +201,7 @@ $page__max-width: 50em;
 
 	}
 
-}
-
+}	
 
 
 .intro {
@@ -248,6 +259,5 @@ $page__max-width: 50em;
 	}
 }
 */
-
 
 

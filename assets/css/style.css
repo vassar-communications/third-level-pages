@@ -118,11 +118,8 @@
     margin-bottom: 1em; }
   .u-folderDepartments h4,
   .u-folderDepartments .Module__list > .Module__listItem > .Module__linktext,
-  .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext,
   .u-folderMajors h4,
-  .u-folderMajors .Module__list > .Module__listItem > .Module__linktext,
-  .u-folderMajors .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext {
-    /* I realize that last one is an egregious hack - we need a class on here, but I don't know how to get that working on the link module. Also it's 4:30 on a Friday, everyone's gone, there is no power in Main, and this has to get done ASAP, so I'm resorting to desperate means here */
+  .u-folderMajors .Module__list > .Module__listItem > .Module__linktext {
     font-family: "acumin-pro", "Arial", "Helvetica";
     text-transform: uppercase;
     font-weight: bold !important;
@@ -130,18 +127,25 @@
     display: block;
     font-size: 0.9em;
     letter-spacing: 0.04em; }
-  .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext,
-  .u-folderMajors .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext {
-    border-bottom: 1px solid #882344;
-    color: #882344;
-    display: inline-block;
-    -webkit-transition: all ease 0.4s;
-    transition: all ease 0.4s; }
-    .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:hover, .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:visited:hover,
-    .u-folderMajors .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:hover,
-    .u-folderMajors .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:visited:hover {
-      color: #c1b5b0;
-      border-color: #c1b5b0; }
+
+/* I realize this is an egregious hack - we need a class on here, but I don't know how to get that working on the link module. Also it's 4:30 on a Friday, everyone's gone, there is no power in Main, and this has to get done ASAP, so I'm resorting to desperate means here */
+.u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext {
+  font-family: "acumin-pro", "Arial", "Helvetica";
+  text-transform: uppercase;
+  font-weight: bold !important;
+  margin: 1.4em 0 0.2em 0 !important;
+  display: block;
+  font-size: 0.9em;
+  letter-spacing: 0.04em; }
+.u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext {
+  border-bottom: 1px solid #882344;
+  color: #882344;
+  display: inline-block;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s; }
+  .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:hover, .u-folderDepartments .Module__link[href*="//independentprogram.vassar.edu"] .Module__linktext:visited:hover {
+    color: #c1b5b0;
+    border-color: #c1b5b0; }
 
 .intro {
   font-size: 1.3em;
